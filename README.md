@@ -1,4 +1,4 @@
-# aethon-nestjs-paginate
+# aethon-paginate-types
 
 ## Description
 
