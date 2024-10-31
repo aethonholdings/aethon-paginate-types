@@ -34,6 +34,16 @@ export type Where = WhereClause[];
 export type WhereClause = [string, string];
 ```
 
-### Installation
+## Pagination query scheme
+```
+export interface PaginateQuery {
+    page?: number;
+    limit?: number;
+    orderBy?: OrderBy;
+    where?: Where;
+}
+```
+
+## Installation
 
 `npm install -s aethon-paginate-types`
