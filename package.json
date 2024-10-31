@@ -1,0 +1,43 @@
+{
+    "name": "aethon-paginate-types",
+    "version": "0.0.1",
+    "description": "Type definitions for Aethon pagination",
+    "main": "index.js",
+    "scripts": {
+        "watch": "cp package.json ./dist & tsc --watch",
+        "build": "cp package.json README.md ./dist & tsc -p tsconfig.build.json",
+        "lint": "eslint '{src,apps,libs,test}/**/*.ts' --fix",
+        "format": "prettier --write 'src/**/*.ts'"
+    },
+    "keywords": [
+        "paginate", "NestJS"
+    ],
+    "repository": "github:aethonholdings/aethon-paginate-types",
+    "author": "Konstantinos Dimitriou",
+    "license": "MIT",
+    "peerDependencies": {},
+    "devDependencies": {
+        "prettier": "^3.2.4",
+        "typescript": "^5.3.3"
+    },
+    "jest": {
+        "moduleFileExtensions": [
+            "js",
+            "json",
+            "ts"
+        ],
+        "rootDir": ".",
+        "moduleNameMapper": {
+            "^src/(.*)$": "<rootDir>/src/$1"
+        },
+        "testRegex": ".*\\.spec\\.ts$",
+        "transform": {
+            "^.+\\.(t|j)s$": "ts-jest"
+        },
+        "collectCoverageFrom": [
+            "**/*.(t|j)s"
+        ],
+        "coverageDirectory": "../coverage",
+        "testEnvironment": "node"
+    }
+}
