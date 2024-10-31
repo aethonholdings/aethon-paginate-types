@@ -10,13 +10,16 @@
         "format": "prettier --write 'src/**/*.ts'"
     },
     "keywords": [
-        "paginate", "NestJS"
+        "paginate",
+        "NestJS"
     ],
     "repository": "github:aethonholdings/aethon-paginate-types",
     "author": "Konstantinos Dimitriou",
     "license": "MIT",
-    "peerDependencies": {},
     "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^8.12.2",
+        "eslint": "^8.56.0",
+        "eslint-plugin-prettier": "^5.2.1",
         "prettier": "^3.2.4",
         "typescript": "^5.3.3"
     },
