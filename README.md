@@ -34,7 +34,7 @@ export type Where = WhereClause[];
 export type WhereClause = [string, string];
 ```
 
-## Pagination query scheme
+## Pagination query schema
 ```
 export interface PaginateQuery {
     page?: number;
