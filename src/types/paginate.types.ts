@@ -1,3 +1,5 @@
+import { Comparator } from "../enums/paginate.enums";
+
 export interface Paginated<T> {
     meta: Meta;
     data: T[];
@@ -32,4 +34,4 @@ export type OrderBy = OrderByClause[];
 export type OrderByClause = [string, Order];
 export type Order = "ASC" | "DESC";
 export type Where = WhereClause[];
-export type WhereClause = [string, string];
+export type WhereClause = [string, Comparator, string];
